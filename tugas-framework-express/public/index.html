@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hello World</title>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+
+        <script>
+            async function getUser() {
+                const url = "http://localhost:3000/user";
+                try {
+                    const response = await fetch(url);
+
+                    if (!response.ok) throw new Error(`Response status: ${response.status}`);
+
+                    const json = await response.json();
+                    const data = json.data;
+
+                    console.table(data);
+                } catch (error) {
+                    console.error(error.message);
+                }
+            }
+
+            getUser();
+        </script>
+    </body>
+</html>
