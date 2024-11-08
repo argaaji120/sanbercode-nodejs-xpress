@@ -1,5 +1,8 @@
+.vscode
 /tugas-js-backend-dev/node_modules/
 /tugas-ts/node_modules/
 /tugas-ts/dist/
 /tugas-framework-express/node_modules
 /tugas-routing-rest-api/node_modules
+/tugas-middleware-express/node_modules
+/tugas-middleware-express/.env
