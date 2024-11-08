@@ -6,3 +6,5 @@
 /tugas-routing-rest-api/node_modules
 /tugas-middleware-express/node_modules
 /tugas-middleware-express/.env
+/tugas-mongodb/node_modules
+/tugas-mongodb/.env
