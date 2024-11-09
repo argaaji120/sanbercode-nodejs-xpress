@@ -8,3 +8,5 @@
 /tugas-middleware-express/.env
 /tugas-mongodb/node_modules
 /tugas-mongodb/.env
+/tugas-mongoose-odm/node_modules
+/tugas-mongoose-odm/.env
