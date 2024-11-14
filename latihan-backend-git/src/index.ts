@@ -37,6 +37,17 @@ app.get("/products", (req: Request, res: Response) => {
     res.status(200).json({ message: "List of product", data: [] });
 });
 
+app.post("/orders", (req: Request, res: Response) => {
+    const { productId, quantity } = req.body;
+    // code ...
+    res.status(200).json({ message: "Order created", data: null });
+});
+
+app.get("/orders", (req: Request, res: Response) => {
+    // code ...
+    res.status(200).json({ message: "List of orders", data: [] });
+});
+
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
 });
