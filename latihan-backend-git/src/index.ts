@@ -23,17 +23,13 @@ app.post("/login", (req: Request, res: Response) => {
 
 app.post("/products", (req: Request, res: Response) => {
     const { name, price } = req.body;
-
-    // code ...
-
+    // your code ...
     res.status(200).json({ message: "Product added", data: null });
 });
 
 app.get("/products", (req: Request, res: Response) => {
     const { name, price } = req.body;
-
-    // code ...
-
+    // your code ...
     res.status(200).json({ message: "List of product", data: [] });
 });
 
