@@ -14,6 +14,7 @@ app.post("/register", (req: Request, res: Response) => {
 app.post("/login", (req: Request, res: Response) => {
     const { username, password } = req.body;
     // your code ...
+
     res.status(200).json({ message: "User logged in", data: null });
 });
 
